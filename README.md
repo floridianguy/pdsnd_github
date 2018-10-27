@@ -1,15 +1,22 @@
 ### Date created
-Include the date you created this project and README file.
+This project was created on Oct 13, 2018
+The initial git commit and README file creation were performed on Oct 27, 2018
 
 ### Project Title
-Replace the Project Title
+Aaron_bikeshare_project
 
 ### Description
-Describe what your project is about and what it does
+This project analyzes bikeshare data based on the Udacity Programming For DS
+csv files that were provided for analysis.  The purpose is to extract key data from
+these large files that explains who the bikeshare users are and what their habits are.
 
-### Files used
-Include the files used
+### The following files were used:
+chicago.csv
+washington.csv
+new york city.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+The data files in csv format came from Udacity's Programming for Data Science course.
+They were provided to Udacity by Motivate.  https://www.motivateco.com
+https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104
 
