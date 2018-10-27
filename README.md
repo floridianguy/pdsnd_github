@@ -10,6 +10,8 @@ Aaron_bikeshare_project
   Programming For DS csv files that were provided for analysis.  The purpose is to extract key data from these large files that explains who the bikeshare users are and what their habits are.
 2) The file should allow a user to input their city of choice and
   view a variety of data based on a few basic filters.
+3) This project involved use of the numpy and pandas packages.  The  
+  coding uses functions such as while loops, datetime and if statements.
 
 ### The following files were used:
 chicago.csv
