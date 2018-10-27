@@ -8,8 +8,9 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 def get_filters():
 	"""
-	This section asks the user to input a city, month and day of the week.
-
+	This section asks the user to input a city, month and day of the week.  There
+    is an option to use 'all' for the months and days in order to analyze the 
+    complete data set.  Also note that months run from January to June.
 	Returns:
 		(str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
