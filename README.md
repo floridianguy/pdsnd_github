@@ -1,6 +1,6 @@
 ### Date created
-This project was created on Oct 13, 2018
-The initial git commit and README file creation were performed on Oct 27, 2018
+1) This project was started in Sept 2018 and approved on Oct 13, 2018
+2) The initial git commit and README file creation were performed on Oct 27, 2018
 
 ### Project Title
 Aaron_bikeshare_project
@@ -8,7 +8,8 @@ Aaron_bikeshare_project
 ### Description
 1) This project analyzes bikeshare data based on the Udacity    
   Programming For DS csv files that were provided for analysis.  The purpose is to extract key data from these large files that explains who the bikeshare users are and what their habits are.
-2) 
+2) The file should allow a user to input their city of choice and
+  view a variety of data based on a few basic filters.
 
 ### The following files were used:
 chicago.csv
