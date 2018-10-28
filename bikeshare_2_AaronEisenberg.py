@@ -161,8 +161,9 @@ def user_stats(df):
 
     # Display counts of gender
 
+	city = city.lower()
 	if city == 'washington':
-		print('No gender data available for washington.\n')
+		print('No gender data is available for washington.\n')
 	else:
 		gender_counts = df['Gender'].value_counts()
 		gender_not_specified = df['Gender'].isna().sum()
@@ -170,8 +171,9 @@ def user_stats(df):
 
     # Display earliest, most recent, and most common year of birth
 
+	city = city.lower()
 	if city == 'washington':
-		print('No year of birth data available for washington.')
+		print('No year of birth data is available for washington.')
 	else:
 		min_birth_year = df['Birth Year'].min()
 		max_birth_year = df['Birth Year'].max()
