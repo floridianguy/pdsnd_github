@@ -163,8 +163,9 @@ def user_stats(df):
 
     # Display counts of gender
 
+	city = city.lower()
 	if city == 'washington':
-		print('No gender data available for washington.\n')
+		print('No gender data is available for washington.\n')
 	else:
 		gender_counts = df['Gender'].value_counts()
 		gender_not_specified = df['Gender'].isna().sum()
@@ -172,8 +173,9 @@ def user_stats(df):
 
     # Display earliest, most recent, and most common year of birth
 
+	city = city.lower()
 	if city == 'washington':
-		print('No year of birth data available for washington.')
+		print('No year of birth data is available for washington.')
 	else:
 		min_birth_year = df['Birth Year'].min()
 		max_birth_year = df['Birth Year'].max()
@@ -195,23 +197,25 @@ def user_stats(df):
 
 def show_data(df):
 	"""This section provides the option to view some of the raw data."""
-	while True:
-		view_data = input('Would you like to see the first few rows of the data? Yes/No\n')
+	view_data = input('Would you like to see the first 5 rows?\n')
+	view_data = view_data.lower()
+	while view_data not in ['yes', 'no']:
+		view_data = input('Please input "yes" or "no"')
 		view_data = view_data.lower()
-		if view_data not in ('yes', 'no'):
-			view_data = input('Please enter \'Yes\' or \'No\'')
-		elif view_data == 'yes':
-			initial_row = 0
-			fifth_row = 4
-			print(df.loc[initial_row:fifth_row, :], '\n')
-			view_data = input('Would you like to see five more rows of data?')
+	while view_data == 'yes':
+		print(df.head())
+		initial_row = 0
+		fifth_row = 5
+		view_data = input('Would you like to see another 5 rows of data?\n')
+		view_data = view_data.lower()
+		while view_data == 'yes':
 			initial_row += 5
 			fifth_row += 5
-			print(df.loc[initial_row:fifth_row, :], '\n')
-			print(view_data)
+			print(df.iloc[initial_row:fifth_row])
+			view_data = input('Would you like to see another 5 rows of data?\n')
+			view_data = view_data.lower()
 		else:
 			print('\n')
-			break
 
 
 def main():
